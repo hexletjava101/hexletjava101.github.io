@@ -1,0 +1,856 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <!-- Basic Page Needs
+    ================================================== -->
+    <meta charset="utf-8">
+    <!--[if IE]><meta http-equiv="x-ua-compatible" content="IE=9" /><![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>JAVA.hexlet - Наверное, самый лучший курс по программированию на русском!</title>
+    <meta name="description" content="Курсы по программированию на Java для начинающих">
+    <meta name="keywords" content="java, курсы программирования, уроки java, обучающее видео, онлайн курсы, ява">
+    
+    
+    <!-- Favicons
+    ================================================== -->
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/apple-touch-icon-114x114.png">
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" type="text/css"  href="css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="fonts/font-awesome/css/font-awesome.css">
+
+    <!-- Slider
+    ================================================== -->
+    <link href="css/owl.carousel.css" rel="stylesheet" media="screen">
+    <link href="css/owl.theme.css" rel="stylesheet" media="screen">
+
+    <!-- Stylesheet
+    ================================================== -->
+    <link rel="stylesheet" type="text/css"  href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/responsive.css">
+
+    <link href='http://fonts.googleapis.com/css?family=Play:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Noto+Sans:300italic,400italic,600italic,700italic,800italic,700,300,600,800,400' rel='stylesheet' type='text/css'>
+	
+    <script type="text/javascript" src="js/modernizr.custom.js"></script>
+	<script src='https://www.google.com/recaptcha/api.js'></script>
+	<script type="text/javascript" src="//vk.com/js/api/openapi.js?116"></script>
+	
+	 <!-- Google Analytics
+    ================================================== -->
+	<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-62650167-1', 'auto');
+  ga('send', 'pageview');
+
+	</script>
+	
+	<!-- Yandex.Metrika counter -->
+	<script type="text/javascript">
+	(function (d, w, c) {
+		(w[c] = w[c] || []).push(function() {
+			try {
+				w.yaCounter30097189 = new Ya.Metrika({id:30097189,
+						webvisor:true,
+						clickmap:true,
+						trackLinks:true,
+						accurateTrackBounce:true,
+						trackHash:true});
+			} catch(e) { }
+		});
+
+		var n = d.getElementsByTagName("script")[0],
+			s = d.createElement("script"),
+			f = function () { n.parentNode.insertBefore(s, n); };
+		s.type = "text/javascript";
+		s.async = true;
+		s.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//mc.yandex.ru/metrika/watch.js";
+
+		if (w.opera == "[object Opera]") {
+			d.addEventListener("DOMContentLoaded", f, false);
+		} else { f(); }
+	})(document, window, "yandex_metrika_callbacks");
+	</script>
+	<noscript><div><img src="//mc.yandex.ru/watch/30097189" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+	<!-- /Yandex.Metrika counter -->	
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <!-- Navigation
+    ==========================================-->
+    <nav id="tf-menu" class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="index.html"><span style="color:#FCAC45">JAVA</span>.hexlet.io</a>
+         </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#tf-home" class="page-scroll">Главная</a></li>
+            <li><a href="#tf-about" class="page-scroll">О курсе</a></li>
+            <li><a href="#tf-team" class="page-scroll">Команда</a></li>
+            <li><a href="#tf-works" class="page-scroll">Уроки</a></li>
+            <li><a href="#tf-testimonials" class="page-scroll">Отзывы</a></li>
+            <li><a href="#tf-contact" class="page-scroll">Связаться</a></li>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+    </nav>
+
+    <!-- Home Page
+    ==========================================-->
+    <div id="tf-home" class="text-center">
+        <div class="overlay">
+		 
+			<div class="rock">
+	
+				<ul id="scene" class="scene">
+				<li class="layer" data-depth="0.7"><img src="img/rocket.png"></li>
+				</ul>
+
+			</div>
+		<!-- Scripts -->
+		<script src="js/parallax.js"></script>
+		<script>
+
+		var scene = document.getElementById('scene');
+		var parallax = new Parallax(scene);
+
+		</script>
+				
+            <div class="content">
+                <h1>Добро пожаловать на борт <strong><span class="color">JAVA</span>101</strong></h1>
+                <p class="lead">Новый <strong>практический</strong> курс по <span class="color">Java</span> "с нуля" от инженера с <strong>опытом работы</strong> в мировых ИТ гигантах</p>
+                <p style="text-align:center"><a href="https://ru.hexlet.io/courses/java_101" class="btn btn-success btn-lg" target="_self" title="Visit Site" rel="">Начать изучение</a></p>
+				<a href="#tf-about" class="fa fa-angle-down page-scroll"></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- About Us Page
+    ==========================================-->
+    <div id="tf-about">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+				
+				<div class="embed-responsive embed-responsive-16by9">
+              
+				<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/ubPt0UeJe64?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0"  allowfullscreen></iframe>
+                </div>
+                 </div>
+				<div class="col-md-6">
+                    <div class="about-text">
+                        <div class="section-title">
+                            <h4>Путь к успеху начинается прямо сейчас!</h4>
+                            <h2>Подробнее <strong>о курсе</strong></h2>
+                            <hr>
+                            <div class="clearfix"></div>
+                        </div>
+                        <p class="intro">Хотите научиться программировать и сразу начать применять полученные знания на практике? При этом Вы цените своё время? Тогда доверьтесь профессионалам в своей области! </p>
+                        <ul class="about-list">
+                            <li>
+                                <span class="fa fa-dot-circle-o"></span>
+                                <strong>Теория</strong> - <em>Насыщенные информацией обучающие видеоуроки </em>
+                            </li>
+                            <li>
+                                <span class="fa fa-dot-circle-o"></span>
+                                <strong>Тесты</strong> - <em>Наборы тестовых вопросов для закрепления материала</em>
+                            </li>
+                            <li>
+                                <span class="fa fa-dot-circle-o"></span>
+                                <strong>Практика</strong> - <em>Практические задания на собственной платформе </em>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Team Page
+    ==========================================-->
+    <div id="tf-team" class="text-center">
+        <div class="overlay">
+            <div class="container">
+                <div class="section-title center">
+                    <h2>Наша <strong>команда</strong></h2>
+                    <div class="line">
+                        <hr>
+                    </div>
+                </div>
+
+                <div id="team" class="owl-carousel owl-theme row">
+                    
+										
+                    <div class="item">
+                        <div class="thumbnail">
+                            <img src="img/team/01.jpg" alt="..." class="img-circle team-img">
+                            <div class="caption">
+                                <h3>Вячеслав Ковалевский</h3>
+                                <p>Автор курса</p>
+                                <p>Инженер-исследователь c опытом работы в компаниях Dio-soft, Samsung, Amazon и Google.<a href="https://ie.linkedin.com/in/b0noi/ru"  target="_blank" > Подробнее.</a> </br> Занимается разработками в сфере искусственного интеллекта и обучением программированию.</p>
+                            </div>
+                        </div>
+                    </div>
+					
+                    <div class="item">
+                        <div class="thumbnail">
+                            <img src="img/team/02.jpg" alt="..." class="img-circle team-img">
+                            <div class="caption">
+                                <h3>Глеб Бочкарёв</h3>
+                                <p>Менеджер курса</p>
+                                <p>Занимается организацией обучающего процесса. Оказывает поддержку ученикам.</br> В рамках данного курса является начинающим учеником, помогающим автору спуститься на уровень понимания новичка.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+    <!-- Portfolio Section
+    ==========================================-->
+    <div id="tf-works">
+        <div class="container"> <!-- Container -->
+            <div class="section-title text-center center">
+                <h2>Познакомьтесь с <strong>уроками</strong></h2>
+                <div class="line">
+                    <hr>
+                </div>
+                <div class="clearfix"></div>
+                <small><em>Все уроки разбиты на логические модули. Каждый модуль (кроме первого вводного) имеет тестовые и практические задания. Также для каждого урока существуют обсуждения учеников в которых они делятся совим мнением, задают вопрсы и получают ответы. </em></small>
+            </div>
+            
+            <div class="categories">
+                
+                <ul class="cat">
+                    <li class="pull-left"><h4>Модули:</h4></li>
+                    <li class="pull-right">
+                        <ol class="type">
+                            <li><a href="#" data-filter="*">Все</a></li>
+                            <li><a href="#" data-filter=".mod1" class="active">Модуль 1</a></li>
+                            <li><a href="#" data-filter=".mod2" >Модуль 2</a></li>
+                            <li><a href="#" data-filter=".mod3" >Модуль 3</a></li>
+                            <li><a href="#" data-filter=".mod4" >Модуль 4</a></li>
+							<li><a href="#" data-filter=".mod5" >Модуль 5</a></li>
+							<li><a href="#" data-filter=".mod6" >Модуль 6</a></li>
+						</ol>
+                    </li>
+                </ul>
+                <div class="clearfix"></div>
+            </div>
+
+            <div id="lightbox" class="row">
+
+                <div class="col-sm-6 col-md-3 col-lg-3 mod1">
+                    <div class="portfolio-item">
+                        <div class="hover-bg">
+                            <a href="https://ru.hexlet.io/lessons/intro_to_java/theory_unit">
+                                <div class="hover-text">
+                                    <h4>Введение в Java</h4>
+                                    <small>Модуль 1</small>
+                                    <div class="clearfix"></div>
+                                    <i class="fa fa-plus"></i>
+                                </div>
+                                <img src="img/portfolio/1.jpg" class="img-responsive" alt="...">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-md-3 col-lg-3 mod1">
+                    <div class="portfolio-item">
+                        <div class="hover-bg">
+                            <a href="https://ru.hexlet.io/lessons/java_module0_programming_languages_classification/theory_unit">
+                                <div class="hover-text">
+                                    <h4>Виды языков программирования</h4>
+                                    <small>Модуль 1</small>
+                                    <div class="clearfix"></div>
+                                    <i class="fa fa-plus"></i>
+                                </div>
+                                <img src="img/portfolio/2.jpg" class="img-responsive" alt="...">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-md-3 col-lg-3 mod1">
+                    <div class="portfolio-item">
+                        <div class="hover-bg">
+                            <a href="https://ru.hexlet.io/lessons/java_structure/theory_unit">
+                                <div class="hover-text">
+                                    <h4>Из чего состоит Java</h4>
+                                    <small>Модуль 1</small>
+                                    <div class="clearfix"></div>
+                                    <i class="fa fa-plus"></i>
+                                </div>
+                                <img src="img/portfolio/3.jpg" class="img-responsive" alt="...">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-md-3 col-lg-3 mod1">
+                    <div class="portfolio-item">
+                        <div class="hover-bg">
+                            <a href="https://ru.hexlet.io/lessons/terminal_basics_work_with_filesystem/theory_unit">
+                                <div class="hover-text">
+                                    <h4>Основы работы в терминале</h4>
+                                    <small>Модуль 1</small>
+                                    <div class="clearfix"></div>
+                                    <i class="fa fa-plus"></i>
+                                </div>
+                                <img src="img/portfolio/4.jpg" class="img-responsive" alt="...">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-md-3 col-lg-3 mod1">
+                    <div class="portfolio-item">
+                        <div class="hover-bg">
+                            <a href="https://ru.hexlet.io/lessons/java_dev_env_setup/theory_unit">
+                                <div class="hover-text">
+                                    <h4>Настройка окружающей среды</h4>
+                                    <small>Модуль 1</small>
+                                    <div class="clearfix"></div>
+                                    <i class="fa fa-plus"></i>
+                                </div>
+                                <img src="img/portfolio/5.jpg" class="img-responsive" alt="...">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-md-3 col-lg-3 mod2">
+                    <div class="portfolio-item">
+                        <div class="hover-bg">
+                            <a href="https://ru.hexlet.io/lessons/java_oop_basics/theory_unit">
+                                <div class="hover-text">
+                                    <h4>Введение в ООП</h4>
+                                    <small>Модуль 2</small>
+                                    <div class="clearfix"></div>
+                                    <i class="fa fa-plus"></i>
+                                </div>
+                                <img src="img/portfolio/6.jpg" class="img-responsive" alt="...">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-md-3 col-lg-3 mod2">
+                    <div class="portfolio-item">
+                        <div class="hover-bg">
+                            <a href="https://ru.hexlet.io/lessons/java_types/theory_unit">
+                                <div class="hover-text">
+                                    <h4>Типы данных в Java</h4>
+                                    <small>Модуль 2</small>
+                                    <div class="clearfix"></div>
+                                    <i class="fa fa-plus"></i>
+                                </div>
+                                <img src="img/portfolio/7.jpg" class="img-responsive" alt="...">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-md-3 col-lg-3 mod2">
+                    <div class="portfolio-item">
+                        <div class="hover-bg">
+                            <a href="https://ru.hexlet.io/lessons/java_instance_usage/theory_unit">
+                                <div class="hover-text">
+                                    <h4>Работа с экземплярами</h4>
+                                    <small>Модуль 2</small>
+                                    <div class="clearfix"></div>
+                                    <i class="fa fa-plus"></i>
+                                </div>
+                                <img src="img/portfolio/8.jpg" class="img-responsive" alt="...">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+				
+				 <div class="col-sm-6 col-md-3 col-lg-3 mod2">
+                    <div class="portfolio-item">
+                        <div class="hover-bg">
+                            <a href="https://ru.hexlet.io/lessons/java_packages/theory_unit">
+                                <div class="hover-text">
+                                    <h4>Пакеты в Java</h4>
+                                    <small>Модуль 2</small>
+                                    <div class="clearfix"></div>
+                                    <i class="fa fa-plus"></i>
+                                </div>
+                                <img src="img/portfolio/9.jpg" class="img-responsive" alt="...">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+				
+				 <div class="col-sm-6 col-md-3 col-lg-3 mod3">
+                    <div class="portfolio-item">
+                        <div class="hover-bg">
+                            <a href="https://ru.hexlet.io/lessons/method_basics/theory_unit">
+                                <div class="hover-text">
+                                    <h4>Методы в классах. Часть 1</h4>
+                                    <small>Модуль 3</small>
+                                    <div class="clearfix"></div>
+                                    <i class="fa fa-plus"></i>
+                                </div>
+                                <img src="img/portfolio/10.jpg" class="img-responsive" alt="...">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+				
+				 <div class="col-sm-6 col-md-3 col-lg-3 mod3">
+                    <div class="portfolio-item">
+                        <div class="hover-bg">
+                            <a href="https://ru.hexlet.io/lessons/java_methods_basics_part_2/theory_unit">
+                                <div class="hover-text">
+                                    <h4>Методы в классах. Часть 2</h4>
+                                    <small>Модуль 3</small>
+                                    <div class="clearfix"></div>
+                                    <i class="fa fa-plus"></i>
+                                </div>
+                                <img src="img/portfolio/11.jpg" class="img-responsive" alt="...">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+				
+				 <div class="col-sm-6 col-md-3 col-lg-3 mod3">
+                    <div class="portfolio-item">
+                        <div class="hover-bg">
+                            <a href="https://ru.hexlet.io/lessons/java_methods_levels/theory_unit">
+                                <div class="hover-text">
+                                    <h4>Уровни методов в Java</h4>
+                                    <small>Модуль 3</small>
+                                    <div class="clearfix"></div>
+                                    <i class="fa fa-plus"></i>
+                                </div>
+                                <img src="img/portfolio/12.jpg" class="img-responsive" alt="...">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+				
+				 <div class="col-sm-6 col-md-3 col-lg-3 mod3">
+                    <div class="portfolio-item">
+                        <div class="hover-bg">
+                            <a href="https://ru.hexlet.io/lessons/java_inheritance/theory_unit">
+                                <div class="hover-text">
+                                    <h4>Наследование в Java</h4>
+                                    <small>Модуль 3</small>
+                                    <div class="clearfix"></div>
+                                    <i class="fa fa-plus"></i>
+                                </div>
+                                <img src="img/portfolio/13.jpg" class="img-responsive" alt="...">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+				
+				 <div class="col-sm-6 col-md-3 col-lg-3 mod3">
+                    <div class="portfolio-item">
+                        <div class="hover-bg">
+                            <a href="https://ru.hexlet.io/lessons/override_in_java/theory_unit">
+                                <div class="hover-text">
+                                    <h4>Аннотация @Override</h4>
+                                    <small>Модуль 3</small>
+                                    <div class="clearfix"></div>
+                                    <i class="fa fa-plus"></i>
+                                </div>
+                                <img src="img/portfolio/14.jpg" class="img-responsive" alt="...">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+				
+				 <div class="col-sm-6 col-md-3 col-lg-3 mod4">
+                    <div class="portfolio-item">
+                        <div class="hover-bg">
+                            <a href="https://ru.hexlet.io/lessons/if_in_java/theory_unit">
+                                <div class="hover-text">
+                                    <h4>Условный оператор IF</h4>
+                                    <small>Модуль 4</small>
+                                    <div class="clearfix"></div>
+                                    <i class="fa fa-plus"></i>
+                                </div>
+                                <img src="img/portfolio/15.jpg" class="img-responsive" alt="...">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+				
+				 <div class="col-sm-6 col-md-3 col-lg-3 mod4">
+                    <div class="portfolio-item">
+                        <div class="hover-bg">
+                            <a href="https://ru.hexlet.io/lessons/java_arrays/theory_unit">
+                                <div class="hover-text">
+                                    <h4>Массивы в Java</h4>
+                                    <small>Модуль 4</small>
+                                    <div class="clearfix"></div>
+                                    <i class="fa fa-plus"></i>
+                                </div>
+                                <img src="img/portfolio/16.jpg" class="img-responsive" alt="...">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+				
+				 <div class="col-sm-6 col-md-3 col-lg-3 mod4">
+                    <div class="portfolio-item">
+                        <div class="hover-bg">
+                            <a href="https://ru.hexlet.io/lessons/loops_in_java/theory_unit">
+                                <div class="hover-text">
+                                    <h4>Циклы в Java</h4>
+                                    <small>Модуль 4</small>
+                                    <div class="clearfix"></div>
+                                    <i class="fa fa-plus"></i>
+                                </div>
+                                <img src="img/portfolio/17.jpg" class="img-responsive" alt="...">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+				
+				 <div class="col-sm-6 col-md-3 col-lg-3 mod4">
+                    <div class="portfolio-item">
+                        <div class="hover-bg">
+                            <a href="https://ru.hexlet.io/lessons/java_switch/theory_unit">
+                                <div class="hover-text">
+                                    <h4>Оператор SWITCH</h4>
+                                    <small>Модуль 4</small>
+                                    <div class="clearfix"></div>
+                                    <i class="fa fa-plus"></i>
+                                </div>
+                                <img src="img/portfolio/18.jpg" class="img-responsive" alt="...">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+				 <div class="col-sm-6 col-md-3 col-lg-3 mod5">
+                    <div class="portfolio-item">
+                        <div class="hover-bg">
+                            <a href="https://ru.hexlet.io/lessons/visibility_levels_in_java/theory_unit">
+                                <div class="hover-text">
+                                    <h4>Уровни доступа в Java</h4>
+                                    <small>Модуль 5</small>
+                                    <div class="clearfix"></div>
+                                    <i class="fa fa-plus"></i>
+                                </div>
+                                <img src="img/portfolio/19.jpg" class="img-responsive" alt="...">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+				 <div class="col-sm-6 col-md-3 col-lg-3 mod5">
+                    <div class="portfolio-item">
+                        <div class="hover-bg">
+                            <a href="https://ru.hexlet.io/lessons/constructor/theory_unit">
+                                <div class="hover-text">
+                                    <h4>Конструкторы в Java</h4>
+                                    <small>Модуль 5</small>
+                                    <div class="clearfix"></div>
+                                    <i class="fa fa-plus"></i>
+                                </div>
+                                <img src="img/portfolio/20.jpg" class="img-responsive" alt="...">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+				 <div class="col-sm-6 col-md-3 col-lg-3 mod5">
+                    <div class="portfolio-item">
+                        <div class="hover-bg">
+                            <a href="https://ru.hexlet.io/lessons/immutability/theory_unit">
+                                <div class="hover-text">
+                                    <h4>Неизменяемые объекты</h4>
+                                    <small>Модуль 5</small>
+                                    <div class="clearfix"></div>
+                                    <i class="fa fa-plus"></i>
+                                </div>
+                                <img src="img/portfolio/21.jpg" class="img-responsive" alt="...">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+				 <div class="col-sm-6 col-md-3 col-lg-3 mod5">
+                    <div class="portfolio-item">
+                        <div class="hover-bg">
+                            <a href="https://ru.hexlet.io/lessons/builder/theory_unit">
+                                <div class="hover-text">
+                                    <h4>Паттерн Builder</h4>
+                                    <small>Модуль 5</small>
+                                    <div class="clearfix"></div>
+                                    <i class="fa fa-plus"></i>
+                                </div>
+                                <img src="img/portfolio/22.jpg" class="img-responsive" alt="...">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+				 <div class="col-sm-6 col-md-3 col-lg-3 mod5">
+                    <div class="portfolio-item">
+                        <div class="hover-bg">
+                            <a href="https://ru.hexlet.io/lessons/enum/theory_unit">
+                                <div class="hover-text">
+                                    <h4>Перечисления в Java</h4>
+                                    <small>Модуль 5</small>
+                                    <div class="clearfix"></div>
+                                    <i class="fa fa-plus"></i>
+                                </div>
+                                <img src="img/portfolio/23.jpg" class="img-responsive" alt="...">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+				<div class="col-sm-6 col-md-3 col-lg-3 mod6">
+                    <div class="portfolio-item">
+                        <div class="hover-bg">
+                            <a href="https://ru.hexlet.io/lessons/enum/theory_unit">
+                                <div class="hover-text">
+                                    <h4>Составные строки в Java</h4>
+                                    <small>Модуль 6</small>
+                                    <div class="clearfix"></div>
+                                    <i class="fa fa-plus"></i>
+                                </div>
+                                <img src="img/portfolio/24.jpg" class="img-responsive" alt="...">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+				<div class="col-sm-6 col-md-3 col-lg-3 mod6">
+                    <div class="portfolio-item">
+                        <div class="hover-bg">
+                            <a href="https://ru.hexlet.io/lessons/enum/theory_unit">
+                                <div class="hover-text">
+                                    <h4> Манипуляции символами</h4>
+                                    <small>Модуль 6</small>
+                                    <div class="clearfix"></div>
+                                    <i class="fa fa-plus"></i>
+                                </div>
+                                <img src="img/portfolio/25.jpg" class="img-responsive" alt="...">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+				<div class="col-sm-6 col-md-3 col-lg-3 mod6">
+                    <div class="portfolio-item">
+                        <div class="hover-bg">
+                            <a href="https://ru.hexlet.io/lessons/string_convertation/theory_unit">
+                                <div class="hover-text">
+                                    <h4>Преобразование строк в числа</h4>
+                                    <small>Модуль 6</small>
+                                    <div class="clearfix"></div>
+                                    <i class="fa fa-plus"></i>
+                                </div>
+                                <img src="img/portfolio/26.jpg" class="img-responsive" alt="...">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Testimonials Section
+    ==========================================-->
+    <div id="tf-testimonials" class="text-center">
+        <div class="overlay">
+            <div class="container">
+                <div class="section-title center">
+                    <h2>Реальные<strong> отзывы</strong> наших учеников</h2>
+                    <div class="line">
+                        <hr>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2">
+                        <div id="testimonial" class="owl-carousel owl-theme">
+                            <div class="item">
+                                <h5> Очень интересно рассказываете. Не часто такие лекции найдёшь. Обычно они такие скучные, что просто заставляешь себя их слушать, а ваши видео смотреть очень даже интересно.
+К тому же есть много интересных и нужных вещей даже для человека, уже знающего синтаксис.</h5>
+                               
+                            </div>
+							
+							<div class="item">
+                                <h5>Смотрел предыдущую версию - наверное, самый лучший курс по программированию на русском, из тех которые я видел.</h5>
+                               
+                            </div>
+							
+							<div class="item">
+                                <h5>Super! Нигде настолько зажигательной подачи еще не встречал! И транскрипт под рукой - словно конспект - в общем, нет слов. Огромное спасибо, Вячеслав! </h5>
+                               
+                            </div>
+							<div class="item">
+                                <h5>...также хочу сказать отдельное "спасибо" за курс по джаве. Очень нравится то, что учите не только синтаксису, но и объясняете, что происходит во время исполнения программы. Продолжайте в том же духе.</h5>
+							
+							</div>								
+							<div class="item">
+                                <h5> Вячеслав, большое спасибо! Лекции смотрятся на одном дыхании, заряжают не только знаниями, но и дают позитивный настрой. СПАСИБО!!!</h5>
+                               
+                            </div>
+							
+							<div class="item">
+                                <h5> Доскональнейшее объяснение! Вячеслав, примите искреннюю благодарность! Все по полочкам, просто талант!</h5>
+                               
+                            </div>
+							
+							<div class="item">
+                                <h5> Спасибо, уровень изложения полностью соответствует моим знаниям (они -- совсем на начальном уровне).</h5>
+                               
+                            </div>
+							
+							<div class="item">
+                                <h5> Огромное спасибо вам за такие курсы "по делу", в отличие от зарубежных развлекательных аналогов.</h5>
+                               
+                            </div>
+														
+							<div class="item">
+                                <h5> Отличный курс, никакой "воды"! Огромное спасибо автору за труд! Все гениальное просто!</h5>
+                               
+                            </div>
+							
+							<div class="item">
+                                <h5> Вячеслав! Отличная, просто зажигательная манера подачи! Deep respect! СПАСИБО!</h5>
+                               
+                            </div>
+
+                            <div class="item">
+                                <h5>Большое спасибо за уроки! Смотрятся легко и вся информация хорошо усваивается. </h5>
+                               
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact Section
+    ==========================================-->
+    	
+    <div id="tf-contact" class="text-center">
+        <div class="container">
+
+            <div class="row">
+                <div class="col-md-8 col-md-offset-2">
+
+                    <div class="section-title center">
+                        <h2>Вы можете <strong>связаться с нами</strong></h2>
+                        <div class="line">
+                            <hr>
+                        </div>
+							<div class="section-title center">				
+								<div id="vk_widget">
+								<div id="vk_groups"></div>
+								</div>
+								<script>// <![CDATA[
+									function VK_Widget_Init(){
+										var vk_width = document.getElementById('vk_widget').clientWidth;
+										VK.Widgets.Group("vk_groups", {mode: 0, width: vk_width, height:"200", color1: 'FFFFFF', color2: '183152', color3: '183152'}, 85021419);
+									};
+									function VK_Widget_ReInit(){
+									  document.getElementById('vk_groups').innerHTML = "";
+									  VK_Widget_Init();
+									};
+									window.addEventListener('load', VK_Widget_Init, false);
+									window.addEventListener('resize', VK_Widget_ReInit, false);
+								// ]]> </script>
+							
+							</div>	
+						
+                        <div class="clearfix"></div>
+                        <small><em>Если у Вас есть вопросы - пишите. Мы тоже не любим спам и гарантируем конфиденциальность Ваших данных.</em></small>            
+                    </div>
+				
+                    <form action="mail.php" method="POST">
+                        <div class="row">
+						
+						    <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="exampleInputPassword1">Имя</label>
+                                    <input type="text" name="name" class="form-control" id="exampleInputPassword1" placeholder="Имя" required>
+                                </div>
+                            </div>
+						
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="exampleInputEmail1">Ваша почта</label>
+                                    <input type="email" name="email" class="form-control" id="exampleInputEmail1" placeholder="Ваша почта" required>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Сообщение</label>
+                            <textarea name="message" class="form-control" rows="3" required></textarea>
+                        </div>
+                        <div class="g-recaptcha" data-sitekey="6LctbQYTAAAAAEN31MTII6MvAtL2VCO7bvMEXaD6"></div>
+                        <button type="submit" class="btn tf-btn btn-default" name="submit" >Отправить</button>
+                    </form>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+	
+    <nav id="footer">
+        <div class="container">
+            <div class="pull-left fnav">
+                <p>JAVA.hexlet.io © 2015</p>
+            </div>
+            <div class="pull-right fnav">
+                <ul class="footer-social">
+                    <li><a href="#" onclick="window.open('https://www.facebook.com/sharer/sharer.php?u='+encodeURIComponent(location.href), 
+                        'facebook-share-dialog', 'width=626,height=436'); return false;"><i class="fa fa-facebook"></i></a></li>
+                    <li><a href="#" onclick="window.open('http://vkontakte.ru/share.php?url='+encodeURIComponent(location.href), 
+                        'вконтакте', 'width=626,height=436'); return false;"><i class="fa fa-vk"></i></a></li>
+                    <li><a href="#" onclick="window.open('https://plus.google.com/share?url='+encodeURIComponent(location.href), 
+                        'google', 'width=626,height=436'); return false;"><i class="fa fa-google-plus"></i></a></li>
+                    <li><a href="#" onclick="window.open('http://twitter.com/timeline/home?status='+document.title+'%20'+window.location.href+window.location.hash,'twitter', 'width=626,height=436'); return false;"><i class="fa fa-twitter"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script type="text/javascript" src="js/jquery.1.11.1.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script type="text/javascript" src="js/bootstrap.js"></script>
+    <script type="text/javascript" src="js/SmoothScroll.js"></script>
+    <script type="text/javascript" src="js/jquery.isotope.js"></script>
+
+    <script src="js/owl.carousel.js"></script>
+
+    <!-- Javascripts
+    ================================================== -->
+    <script type="text/javascript" src="js/main.js"></script>
+
+  </body>
+</html>
