@@ -36,6 +36,28 @@
     <link href='http://fonts.googleapis.com/css?family=Noto+Sans:300italic,400italic,600italic,700italic,800italic,700,300,600,800,400' rel='stylesheet' type='text/css'>
 	
     <script type="text/javascript" src="js/modernizr.custom.js"></script>
+    
+    	<script>
+		    $( document ).ready(function() {
+				var urlParam  = function(name) {
+				    name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+				    var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+				        results = regex.exec(location.search);
+				        if (results == null) return null;
+				    return results[1] || null;
+				}
+		    	intial_reg_url = "https://ru.hexlet.io/courses/java_101";
+
+		        utm_source = urlParam('utm_source');
+		        utm_medium = urlParam('utm_medium');
+		        utm_campaign = urlParam('utm_campaign');
+		        if (utm_source) {
+		        	intial_reg_url += "?utm_source=" + utm_source + "&utm_medium=" + utm_medium + "&utm_campaign="+utm_campaign;
+		        }
+		       	$("#reg_bttn").attr('href', intial_reg_url);
+		    });
+    	</script>
+    
 	<script src='https://www.google.com/recaptcha/api.js'></script>
 	<script type="text/javascript" src="//vk.com/js/api/openapi.js?116"></script>
 	
@@ -54,25 +76,6 @@
 	
 	<!-- Yandex.Metrika counter -->
 	<script type="text/javascript">
-	
-		$( document ).ready(function() {
-				var urlParam  = function(name) {
-				    name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
-				    var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
-				        results = regex.exec(location.search);
-				        if (results == null) return null;
-				    return results[1] || null;
-				}
-		    	intial_reg_url = "https://ru.hexlet.io/courses/java_101";
-
-		        utm_source = urlParam('utm_source');
-		        utm_medium = urlParam('utm_medium');
-		        utm_campaign = urlParam('utm_campaign');
-		        if (utm_source) {
-		        	intial_reg_url += "?utm_source=" + utm_source + "&utm_medium=" + utm_medium + "&utm_campaign="+utm_campaign;
-		        }
-		       	$("#reg_bttn").attr('href', intial_reg_url);
-		});
 	
 	(function (d, w, c) {
 		(w[c] = w[c] || []).push(function() {
