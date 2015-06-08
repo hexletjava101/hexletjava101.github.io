@@ -50,22 +50,24 @@
 
   ga('create', 'UA-62650167-1', 'auto');
   ga('send', 'pageview');
-  var urlParam  = function(name) {
-  	name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
-	var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
-		results = regex.exec(location.search);
-	if (results == null) return null;
-		return results[1] || null;
- }
- intial_reg_url = "https://ru.hexlet.io/courses/java_101";
-
- utm_source = urlParam('utm_source');
- utm_medium = urlParam('utm_medium');
- utm_campaign = urlParam('utm_campaign');
- if (utm_source) {
-        intial_reg_url += "?utm_source=" + utm_source + "&utm_medium=" + utm_medium + "&utm_campaign="+utm_campaign;
- }
- $("#reg_bttn").attr('href', intial_reg_url);
+  $( document ).ready(function() {
+	  var urlParam  = function(name) {
+	  	name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+		var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+			results = regex.exec(location.search);
+		if (results == null) return null;
+			return results[1] || null;
+	 }
+	 intial_reg_url = "https://ru.hexlet.io/courses/java_101";
+	
+	 utm_source = urlParam('utm_source');
+	 utm_medium = urlParam('utm_medium');
+	 utm_campaign = urlParam('utm_campaign');
+	 if (utm_source) {
+	        intial_reg_url += "?utm_source=" + utm_source + "&utm_medium=" + utm_medium + "&utm_campaign="+utm_campaign;
+	 }
+	 $("#reg_bttn").attr('href', intial_reg_url);
+  }
 
 	</script>
 	
