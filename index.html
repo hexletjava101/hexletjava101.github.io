@@ -54,6 +54,26 @@
 	
 	<!-- Yandex.Metrika counter -->
 	<script type="text/javascript">
+	
+		$( document ).ready(function() {
+				var urlParam  = function(name) {
+				    name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+				    var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+				        results = regex.exec(location.search);
+				        if (results == null) return null;
+				    return results[1] || null;
+				}
+		    	intial_reg_url = "https://ru.hexlet.io/courses/java_101";
+
+		        utm_source = urlParam('utm_source');
+		        utm_medium = urlParam('utm_medium');
+		        utm_campaign = urlParam('utm_campaign');
+		        if (utm_source) {
+		        	intial_reg_url += "?utm_source=" + utm_source + "&utm_medium=" + utm_medium + "&utm_campaign="+utm_campaign;
+		        }
+		       	$("#reg_bttn").attr('href', intial_reg_url);
+		});
+	
 	(function (d, w, c) {
 		(w[c] = w[c] || []).push(function() {
 			try {
@@ -142,7 +162,7 @@
             <div class="content">
                 <h1>Добро пожаловать на борт <strong><span class="color">JAVA</span>101</strong></h1>
                 <p class="lead">Новый <strong>практический</strong> курс по <span class="color">Java</span> "с нуля" от инженера с <strong>опытом работы</strong> в мировых ИТ гигантах</p>
-                <p style="text-align:center"><a href="https://ru.hexlet.io/courses/java_101" class="btn btn-success btn-lg" target="_self" title="Visit Site" rel="">Начать изучение</a></p>
+                <p style="text-align:center"><a id="reg_bttn" class="btn btn-success btn-lg" target="_self" title="Visit Site" rel="">Начать изучение</a></p>
 				<a href="#tf-about" class="fa fa-angle-down page-scroll"></a>
             </div>
         </div>
