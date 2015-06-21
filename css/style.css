@@ -591,3 +591,18 @@ nav#footer p{
 
 	padding: 3px 2px !important;
 }
+.color-blink-text {
+font-weight: 800;
+-webkit-animation: color-blink-text 1s step-start infinite;
+animation: color-blink-text 1s step-start infinite
+}
+@-webkit-keyframes color-blink-text {
+0% { color: #FFFFFF }
+25% { color: #FCAC45 }
+100% { color: #FFFFFF }
+}
+@keyframes color-blink-text {
+0% { color: #FFFFFF }
+25% { color: #FCAC45 }
+100% { color: #FFFFFF }
+}
