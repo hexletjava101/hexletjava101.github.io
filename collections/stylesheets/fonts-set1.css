@@ -1,0 +1,12 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700);
+@import url(http://fonts.googleapis.com/css?family=Comfortaa:400,700&subset=cyrillic,cyrillic-ext,latin);
+
+body, input {
+  font-family: "Open Sans Condensed", sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6, .navbar .brand {
+  font-family: 'Comfortaa', cursive;
+  font-weight: bold;
+  text-transform: uppercase;
+}
