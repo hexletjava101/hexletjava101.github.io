@@ -138,7 +138,7 @@
             <!-- add a class to the .signup div when clicking the submit button. Eiher .signup-success or .signup-error -->
             <div class="signup">
               <div class="signup-inner">
-                <form>
+                <form onsubmit="_gaq.push(['_trackEvent', 'Subscribe', 'SubmitForm', 'Subscribe']);">
                   <input id="email-signup" placeholder="       Ваша почта" type="email" />
                   <button class="btn signup-button" type="submit">Submit</button>
                 </form>
