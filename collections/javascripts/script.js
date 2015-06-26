@@ -140,7 +140,7 @@ function setupSignupForm() {
         request.done(function( data ) {
             if( data.error === undefined ) {
                 mainDiv.find( '.response .email' ).text( data.email );
-                mainDiv.find( '.response .status' ).text( 'Зарегестрировано' );
+                mainDiv.find( '.response .status' ).text( 'Зарегистрировано' );
                 mainDiv.addClass( 'signup-active signup-success' );
             }
             else {
