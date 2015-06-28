@@ -18,6 +18,14 @@
   <link href="stylesheets/font-awesome.css" media="screen" rel="stylesheet" type="text/css" />
   <link href="stylesheets/fonts-set1.css" media="screen" rel="stylesheet" type="text/css" />
   <link href="stylesheets/theme.css" media="screen" rel="stylesheet" type="text/css" />
+  <script type='text/javascript'>
+        function trackSubmit() { 
+
+        ga('send', 'event', 'button', 'submit');
+          alert('testing send event')
+        }
+
+  </script>
   <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -138,9 +146,9 @@
             <!-- add a class to the .signup div when clicking the submit button. Eiher .signup-success or .signup-error -->
             <div class="signup">
               <div class="signup-inner">
-                <form>
+                <form onsubmit='trackSubmit()'>
                   <input id="email-signup" placeholder="       Ваша почта" type="email" />
-                  <button onclick="_gaq.push(['_trackEvent', 'Subscribe', 'SubmitForm']);" class="btn signup-button" type="submit">Submit</button>
+                  <button class="btn signup-button" type="submit">Submit</button>
                 </form>
                 <div class="response">
                   <p class="email"></p>
