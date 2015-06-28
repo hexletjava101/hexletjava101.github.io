@@ -142,6 +142,7 @@ function setupSignupForm() {
                 mainDiv.find( '.response .email' ).text( data.email );
                 mainDiv.find( '.response .status' ).text( 'Зарегистрировано' );
                 mainDiv.addClass( 'signup-active signup-success' );
+                ga('send', 'event', 'button', 'submit');
             }
             else {
                 mainDiv.find( '.response .email' ).text( data.email );
