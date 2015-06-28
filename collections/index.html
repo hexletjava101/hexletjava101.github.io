@@ -19,14 +19,10 @@
   <link href="stylesheets/fonts-set1.css" media="screen" rel="stylesheet" type="text/css" />
   <link href="stylesheets/theme.css" media="screen" rel="stylesheet" type="text/css" />
   <script type='text/javascript'>
-       var downloadLink = document.getElementById('button');
-addListener(downloadLink, 'click', function() {
+ $('#button').on('click', function() {
   ga('send', 'event', 'button', 'submit');
 });
-function addListener(element, type, callback) {
- if (element.addEventListener) element.addEventListener(type, callback);
- else if (element.attachEvent) element.attachEvent('on' + type, callback);
-}
+ 
   </script>
   
   <script>
