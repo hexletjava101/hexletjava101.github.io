@@ -55,7 +55,7 @@ p {
 }
 
 .hero-unit {
-  padding: 0 0 40px;
+  padding: 0 0 0px;
   margin-bottom: 20px;
   background: none;
 }
@@ -103,7 +103,7 @@ p {
 /* ----------- */
 .signup {
   width: 250px;
-  height: 120px;
+  height: 90px;
   margin: 50px auto;
   position: relative;
   z-index: 1;
