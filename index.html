@@ -38,7 +38,7 @@
     <script type="text/javascript" src="js/modernizr.custom.js"></script>
     
 	<script src='https://www.google.com/recaptcha/api.js'></script>
-	<script type="text/javascript" src="//vk.com/js/api/openapi.js?116"></script>
+	<script src="//vk.com/js/api/openapi.js?122" type="text/javascript"></script>
 	
 	
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
@@ -917,21 +917,10 @@
                             <hr>
                         </div>
 							<div class="section-title center">				
-								<div id="vk_widget">
 								<div id="vk_groups"></div>
-								</div>
-								<script>// <![CDATA[
-									function VK_Widget_Init(){
-										var vk_width = document.getElementById('vk_widget').clientWidth;
-										VK.Widgets.Group("vk_groups", {mode: 0, width: vk_width, height:"200", color1: 'FFFFFF', color2: '183152', color3: '183152'}, 85021419);
-									};
-									function VK_Widget_ReInit(){
-									  document.getElementById('vk_groups').innerHTML = "";
-									  VK_Widget_Init();
-									};
-									window.addEventListener('load', VK_Widget_Init, false);
-									window.addEventListener('resize', VK_Widget_ReInit, false);
-								// ]]> </script>
+								<script type="text/javascript">
+								VK.Widgets.Group("vk_groups", {mode: 0, width: "400", height: "200", color1: 'FFFFFF', color2: '183152', color3: '183152'}, 85021419);
+								</script>
 							
 							</div>	
 						
