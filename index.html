@@ -38,8 +38,6 @@
     <script type="text/javascript" src="js/modernizr.custom.js"></script>
     
 	<script src='https://www.google.com/recaptcha/api.js'></script>
-	<script src="//vk.com/js/api/openapi.js?122" type="text/javascript"></script>
-	
 	
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
@@ -935,26 +933,24 @@
                         <h2>Вы можете <strong>связаться с нами</strong></h2>
                         <div class="line">
                             <hr>
-                        </div>
-							<div class="section-title center">				
-								<div id="vk_widget">
-								<div id="vk_groups"></div>
-								</div>
-								<script>// <![CDATA[
-									function VK_Widget_Init(){
-										var vk_width = document.getElementById('vk_widget').clientWidth;
-										VK.Widgets.Group("vk_groups", {mode: 0, width: vk_width, height:"200", color1: 'FFFFFF', color2: '183152', color3: '183152'}, 85021419);
-									};
-									function VK_Widget_ReInit(){
-									  document.getElementById('vk_groups').innerHTML = "";
-									  VK_Widget_Init();
-									};
-									window.addEventListener('load', VK_Widget_Init, false);
-									window.addEventListener('resize', VK_Widget_ReInit, false);
-								// ]]> </script>
+                        </div>						
+									<!-- VK Widget -->
+									<div id="vk_groups"></div>
+									<script>
+									function CondiLoaderInit() {
+									 new CondiLoader([
+									{   js: "https://vk.com/js/api/openapi.js?159", 
+										init: function () {																				
+											VK.Widgets.Group("vk_groups", {mode: 0, width: "auto", height:"200", color1: 'FFFFFF', color2: '183152', color3: '183152'}, 85021419);
+									}											
+										} 
+									
+									  ],{ /* options */ });
+									}
+									</script>
+									<script src="js/condi_loader.js" onload="CondiLoaderInit()" defer="defer"></script>							
 							
-							</div>	
-						
+						</div>
                         <div class="clearfix"></div>
                         <small><em>Если у Вас есть вопросы - пишите. Мы тоже не любим спам и гарантируем конфиденциальность Ваших данных.</em></small>            
                     </div>
